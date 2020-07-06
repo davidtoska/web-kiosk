@@ -4,7 +4,7 @@ const path = require("path");
 
 function createWindow() {
   // Create the browser window.
-  let win = new BrowserWindow({
+  const win = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {
@@ -32,7 +32,7 @@ function createWindow() {
       console.error("Could not load url", indexPath);
     });
 
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);

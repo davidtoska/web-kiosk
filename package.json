@@ -1,0 +1,31 @@
+{
+  "name": "web-kiosk",
+  "version": "0.0.1",
+  "description": "Simple web-kiosk application for linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --linux snap",
+    "dev:install": "snap install dist/*.snap --dangerous"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtoska/web-kiosk.git"
+  },
+  "keywords": [
+    "snap",
+    "kiosk",
+    "web"
+  ],
+  "author": "david toska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidtoska/web-kiosk/issues"
+  },
+  "homepage": "https://github.com/davidtoska/web-kiosk#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0"
+  }
+}
