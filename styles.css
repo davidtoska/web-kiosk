@@ -3,5 +3,9 @@ body {
   width: 100vw;
   overflow: hidden;
   position: absolute;
-  background-color: grey;
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+/*  */
