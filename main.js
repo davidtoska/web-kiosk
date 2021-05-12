@@ -17,7 +17,8 @@ function createLocalFileWindow() {
   const argsUrls = [...process.argv].filter((a) => a.includes("url=http"));
 
   if (argsUrls.length === 1) {
-    const argsUrl = argsUrls[0].split("=")[1].trim();
+    const spt_index=argsUrls[0].indexOf('=')
+    const argsUrl = argsUrls[0].substring(spt_index + 1).trim();
     win
       .loadURL(argsUrl)
       .then(() => {
