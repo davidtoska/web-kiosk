@@ -26,7 +26,7 @@
   "homepage": "https://github.com/davidtoska/web-kiosk#readme",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^9.0.5",
+    "electron": "^13.6.6",
     "electron-builder": "^22.7.0"
   }
 }
