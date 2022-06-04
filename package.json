@@ -1,11 +1,12 @@
 {
   "name": "web-kiosk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple web-kiosk application for linux",
   "main": "main.js",
   "scripts": {
-    "start": "electron . -- url=https://google.com",
-    "build": "electron-builder --linux snap",
+    "start": "electron .",
+    "start:dev": "electron . -- url=https://google.com?name=david",
+    "build": "npm run clean && electron-builder --linux snap",
     "clean": "rm -rf dist",
     "dev:install": "snap install dist/*.snap --dangerous"
   },
@@ -26,7 +27,8 @@
   "homepage": "https://github.com/davidtoska/web-kiosk#readme",
   "dependencies": {},
   "devDependencies": {
-    "electron": "^9.0.5",
-    "electron-builder": "^22.7.0"
+    "electron": "^19.0.3",
+    "electron-builder": "^23.0.3",
+    "prettier": "^2.6.2"
   }
 }
